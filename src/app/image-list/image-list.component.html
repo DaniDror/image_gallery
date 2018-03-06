@@ -1,0 +1,28 @@
+<!-- <app-search></app-search> -->
+
+
+<header class="header-wrapper">
+  <div class="search-wrapper">
+    <p (click)="goHome()" class="header"> Image Gallery </p>
+  </div>
+  <div class="search-wrapper">
+      <input type="text" class="searchTerm" [(ngModel)]="searchQuery" placeholder="Search Images">
+      <button class="searchButton" (click)="searchAgain(searchQuery)">
+        <i class="fa fa-search search-icon"></i>
+      </button>
+  </div>
+</header>
+
+<div *ngIf="!isReady" class="wrapper">
+  <p class="loading">Loading...</p>
+</div>
+
+<div *ngIf="isReady">
+  <main class="cards">
+  <div *ngFor="let image of images" class=image-container>
+    <a (click)="openImageDetails(image)">
+      <img src="{{ image.media.m }}" class="image">
+    </a>
+</div>
+</main>
+</div>

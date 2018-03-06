@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.header {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #4EABD3;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #427697;
+}
+
+.details {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #427697;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #427697;
+}
+
+.wrap {
+  display: flex;
+}
+
+.image {
+  flex: 1;
+}
+
+.details {
+  flex: 1;
+}
+
+.wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  background: #eaf5fc;
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 90%;
+}
+.media-object {
+  margin-right: 1em;
+  align-content: center;
+}
+.media-object-warp {
+  flex: 1;
+}
+.media-body {
+  flex: 1;
+}
+.media-heading {
+  margin: 0 0 .5em;
+}
+
+.backButton {
+  border: 0px solid#4EABD3;
+  background: white;
+  text-align: center;
+  color: #4EABD3;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.backButton:hover {
+  font-size: 20.5px;
+}
+
+button:focus {outline:0;}
+
+.loading {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #427697;
+}

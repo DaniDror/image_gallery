@@ -1,0 +1,27 @@
+<header class="header-wrapper">
+  <p class="header"> Image Details </p>
+</header>
+
+<div *ngIf="!isReady" class="wrapper">
+  <p class="media-heading title">Loading...</p>
+</div>
+
+<div *ngIf="isReady">
+<div class="wrapper">
+  <div class="media">
+    <div class="media-object-warp">
+      <img class="media-object" src="{{ imageUrl }}">
+    </div>
+    <div class="media-body">
+      <p class="media-heading title">{{ photo.title._content }}</p>
+      <p class="details">{{ photo.description._content }}</p>
+      <p class="text"> Owner: {{ photo.owner.username }}</p>
+      <p class="text"> Date: {{ photo.dates.taken }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper">
+    <button class="backButton" (click)="goBack()"> Back to search </button>
+<div>
+</div>

@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+.search-icon {
+  color: #4EABD3;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  max-height: 100vh;
+  justify-content: center;
+}
+
+.cards img {
+  margin: 10px;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+  max-width: 25vw;
+  flex: 2;
+}
+
+.image:hover {
+  cursor:pointer;
+  opacity: 0.5;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: #4EABD3;
+  cursor: default;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 30%;
+  border: 3px solid #4EABD3;
+  padding: 5px;
+  height: 20px;
+  border-radius: 0px;
+  outline: none;
+  color: #427697;
+  font-size: 15px;
+}
+
+.searchTerm:focus{
+  color: #427697;
+}
+
+.searchButton {
+  position: relative;
+  right: 3px;
+  width: 40px;
+  height: 36px;
+  border: 3px solid#4EABD3;
+  background: #eaf5fc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:focus {outline:0;}
+
+.search-icon {
+  color: #4EABD3;
+}
+
+.search-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.header-wrapper {
+  padding: 30px;
+}
+
+.loading {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 22px;
+  color: #427697;
+}

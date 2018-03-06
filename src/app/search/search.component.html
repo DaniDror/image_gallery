@@ -1,0 +1,11 @@
+<header class="header-wrapper">
+  <div class="search-wrapper">
+    <p class="header"> Image Gallery </p>
+  </div>
+  <div class="search-wrapper">
+      <input type="text" class="searchTerm" [(ngModel)]="searchQuery" placeholder="Search Images">
+      <button class="searchButton" (click)="getImageList(searchQuery)">
+        <i class="fa fa-search search-icon"></i>
+      </button>
+  </div>
+</header>
